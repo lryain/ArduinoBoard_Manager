@@ -1,0 +1,57 @@
+# Duinopeak Boneduino Board Configuration
+#
+# For more information see:
+# - https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
+# - https://github.com/arduino/Arduino/wiki/Arduino-Hardware-Cores-migration-guide-from-1.0-to-1.6
+#
+
+##############################################################
+# Duinopeak Boneduino 32u4 Configuration
+boneduino32u4.name=Duinopeak Boneduino 32u4
+boneduino32u4.bootloader.low_fuses=0xff
+boneduino32u4.bootloader.high_fuses=0xd8
+boneduino32u4.bootloader.extended_fuses=0xcb
+boneduino32u4.bootloader.file=caterina/Caterina-Boneduino32u4.hex
+boneduino32u4.bootloader.unlock_bits=0x3F
+boneduino32u4.bootloader.lock_bits=0x2F
+boneduino32u4.bootloader.tool=arduino:avrdude
+boneduino32u4.build.mcu=atmega32u4
+boneduino32u4.build.f_cpu=8000000L
+boneduino32u4.build.vid=0x239C
+boneduino32u4.build.pid=0x800C
+boneduino32u4.build.core=arduino:arduino
+boneduino32u4.build.variant=boneduino32u4
+boneduino32u4.build.board=AVR_BONEDUINO32U4
+boneduino32u4.build.usb_product="Boneduino 32u4"
+boneduino32u4.build.usb_manufacturer="Duinopeak"
+boneduino32u4.build.extra_flags={build.usb_flags}
+boneduino32u4.upload.protocol=avr109
+boneduino32u4.upload.maximum_size=28672
+boneduino32u4.upload.speed=57600
+boneduino32u4.upload.disable_flushing=true
+boneduino32u4.upload.use_1200bps_touch=true
+boneduino32u4.upload.wait_for_upload_port=true
+boneduino32u4.upload.tool=arduino:avrdude
+boneduino32u4.vid.0=0x236C
+boneduino32u4.pid.0=0x600C
+
+##############################################################
+# Duinopeak Boneduino 328P Configuration
+boneduino328p.name=Duinopeak Boneduino 328P
+boneduino328p.upload.tool=arduino:avrdude
+boneduino328p.upload.protocol=arduino
+boneduino328p.upload.maximum_size=32256
+boneduino328p.upload.maximum_data_size=2048
+boneduino328p.upload.speed=57600
+boneduino328p.bootloader.tool=arduino:avrdude
+boneduino328p.bootloader.low_fuses=0xFF
+boneduino328p.bootloader.high_fuses=0xDE
+boneduino328p.bootloader.extended_fuses=0x05
+boneduino328p.bootloader.unlock_bits=0x3F
+boneduino328p.bootloader.lock_bits=0x0F
+boneduino328p.bootloader.file=optiboot/optiboot_atmega328.hex
+boneduino328p.build.mcu=atmega328p
+boneduino328p.build.f_cpu=8000000L
+boneduino328p.build.core=arduino:arduino
+boneduino328p.build.variant=arduino:standard
+boneduino328p.build.board=AVR_BONEDUINO328P

@@ -1,0 +1,108 @@
+# ******************************************************************************
+#
+# Arduino AVR Core and platform.
+# ------------------------------
+#
+# For more info:
+# https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
+#
+# This work is licensed under a MIT license https://opensource.org/licenses/MIT
+#
+# Copyright (c) 2016, Duinopeak
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# ******************************************************************************
+
+menu.cpu=Processor
+##############################################################
+
+touchtouch.name=TouchTouch
+touchtouch.vid.0=0x2A66
+touchtouch.pid.0=0x0066
+touchtouch.vid.1=0x2A66
+touchtouch.pid.1=0x8006
+touchtouch.upload.tool=arduino:avrdude
+touchtouch.upload.protocol=avr109
+touchtouch.upload.maximum_size=28672
+touchtouch.upload.maximum_data_size=2560
+touchtouch.upload.speed=57600
+touchtouch.upload.disable_flushing=true
+touchtouch.upload.use_1200bps_touch=true
+touchtouch.upload.wait_for_upload_port=true
+
+touchtouch.bootloader.tool=arduino:avrdude
+touchtouch.bootloader.low_fuses=0xff
+touchtouch.bootloader.high_fuses=0xd8
+touchtouch.bootloader.extended_fuses=0xcb
+touchtouch.bootloader.file=caterina/Caterina.hex
+touchtouch.bootloader.unlock_bits=0x3F
+touchtouch.bootloader.lock_bits=0x2F
+
+touchtouch.build.mcu=atmega32u4
+touchtouch.build.f_cpu=16000000L
+touchtouch.build.vid=0x2A6E
+touchtouch.build.pid=0x8003
+touchtouch.build.usb_product="TouchTouch"
+touchtouch.build.usb_manufacturer="Duinopeak"
+touchtouch.build.board=AVR_TOUCHTOUCH
+touchtouch.build.core=arduino:arduino
+touchtouch.build.variant=arduino:leonardo
+touchtouch.build.extra_flags={build.usb_flags}
+
+touchtouch.variant=arduino:standard
+
+##############################################################
+
+touchtouchmidi.name=TouchTouch(USB MIDI, iPad compatible)
+touchtouchmidi.vid.0=0x2A66
+touchtouchmidi.pid.0=0x0066
+touchtouchmidi.vid.1=0x2A66
+touchtouchmidi.pid.1=0x8006
+touchtouchmidi.upload.tool=arduino:avrdude
+touchtouchmidi.upload.protocol=avr109
+touchtouchmidi.upload.maximum_size=28672
+touchtouchmidi.upload.maximum_data_size=2560
+touchtouchmidi.upload.speed=57600
+touchtouchmidi.upload.disable_flushing=true
+touchtouchmidi.upload.use_1200bps_touch=true
+touchtouchmidi.upload.wait_for_upload_port=true
+
+touchtouchmidi.bootloader.tool=arduino:avrdude
+touchtouchmidi.bootloader.low_fuses=0xff
+touchtouchmidi.bootloader.high_fuses=0xd8
+touchtouchmidi.bootloader.extended_fuses=0xcb
+touchtouchmidi.bootloader.file=caterina/Caterina.hex
+touchtouchmidi.bootloader.unlock_bits=0x3F
+touchtouchmidi.bootloader.lock_bits=0x2F
+
+touchtouchmidi.build.mcu=atmega32u4
+touchtouchmidi.build.f_cpu=16000000L
+touchtouchmidi.build.vid=0x2A6E
+touchtouchmidi.build.pid=0x8003
+touchtouchmidi.build.usb_product="TouchTouch"
+touchtouchmidi.build.usb_manufacturer="Duinopeak"
+touchtouchmidi.build.board=AVR_TOUCHTOUCH
+touchtouchmidi.build.core=arcore
+touchtouchmidi.build.variant=arduino:leonardo
+touchtouchmidi.build.extra_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} -DIPAD_COMPAT
+
+touchtouchmidi.variant=arduino:standard
+
+##############################################################
