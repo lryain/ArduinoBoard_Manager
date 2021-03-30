@@ -290,27 +290,24 @@
 		{
           "name": "Duinopeak nRF52",
           "architecture": "nrf52",
-          "version": "0.21.0",
+          "version": "0.10.0",
           "category": "Duinopeak",
-          "url": "https://duinopeak.com/ArduinoBoard_Manager/raw/master/boards/duinopeak-nrf52-0.10.0.tar.bz2",
-          "archiveFileName": "adafruit-nrf52-0.21.0.tar.bz2",
-          "checksum": "SHA-256:496db8e54c0ef0334df2b864a3338d7f640823431719dd02e0fa0cd32265ced3",
-          "size": "19180192",
+          "url": "https://gitee.com/duinopeak/ArduinoBoard_Manager/raw/master/boards/duinopeak-nrf52-0.10.0.tar.bz2",
+          "archiveFileName": "duinopeak-nrf52-0.10.0.tar.bz2",
+          "checksum": "SHA-256:f6fa7fed369751d55e037944cf284c1915888faac7881472427dae1caf2dd43b",
+          "size": "17436236",
           "help": {
-            "online": "https://forums.adafruit.com"
+            "online": "https://forums.boneduino.com"
           },
           "boards": [
-            {
-              "name": "Boneduino nRF52832"
-            },
             {
               "name": "Boneduino nRF52840 Express"
             },
             {
-              "name": "Duinopeak Wearable BLE"
+              "name": "Boneduino Wearable BLE"
             },
             {
-              "name": "Duinopeak nRF52840 Express"
+              "name": "Duinopeak Classic nRF52840 Express"
             },
             {
               "name": "Duinopeak MEKE"
