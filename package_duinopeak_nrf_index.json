@@ -292,7 +292,7 @@
           "architecture": "nrf52",
           "version": "0.10.0",
           "category": "Duinopeak",
-          "url": "https://gitee.com/duinopeak/ArduinoBoard_Manager/raw/master/boards/duinopeak-nrf52-0.10.0.tar.bz2",
+          "url": "https://github.com/duinopeak/ArduinoBoard_Manager/raw/master/boards/duinopeak-nrf52-0.10.0.tar.bz2",
           "archiveFileName": "duinopeak-nrf52-0.10.0.tar.bz2",
           "checksum": "SHA-256:f6fa7fed369751d55e037944cf284c1915888faac7881472427dae1caf2dd43b",
           "size": "17436236",
